@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="iM_bmi">BMI</string>
+    <string name="txt_enter_txt">ENTER YOUR WEIGHT</string>
+    <string name="edt_inp">WEIGHT (KG)</string>
+    <string name="txt_enter_txt2">ENTER YOUR HEIGHT</string>
+    <string name="edt_inp2">HEIGHT (CM)</string>
+    <string name="btn_cal">CALCULATE</string>
+    <string name="btn_cal2">RESET</string>
+</resources>
