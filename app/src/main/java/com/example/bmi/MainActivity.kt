@@ -6,6 +6,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.res.ResourcesCompat
+import www.sanju.motiontoast.MotionToast
+import www.sanju.motiontoast.MotionToastStyle
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +24,11 @@ class MainActivity : AppCompatActivity() {
         btnCal.setOnClickListener {
 
             if (txtWeight.text.isEmpty() or txtHeight.text.isEmpty()) {
-                Toast.makeText(this, "weight or height is not found",Toast.LENGTH_LONG).show()
+                MotionToast.createColorToast(this, "Empty Field!","Please Fill the Input",
+                    MotionToastStyle.WARNING,
+                    MotionToast.GRAVITY_BOTTOM,
+                    MotionToast.LONG_DURATION,
+                    ResourcesCompat.getFont(this, www.sanju.motiontoast.R.font.helvetica_regular))
 
             } else {
 
